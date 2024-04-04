@@ -19,11 +19,15 @@ func main() {
 	}
 
 	r := csv.NewReader(file)
-	line, err := r.ReadAll()
+	lines, err := r.ReadAll()
 	if err != nil {
 		exit("Failed to parse the provide csv file.")
 	}
-	fmt.Print(line)
+	problems := parseLines(lines)
+	
+	for i, p := problems {
+		fmt.Printf("Problem #%d: %s = \n", i+1 p.q)
+	}
 }
 
 func parseLines(lines [][]string) []problem {
