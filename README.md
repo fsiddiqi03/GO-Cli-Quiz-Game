@@ -1,4 +1,4 @@
-# GO-Cli-Quiz-Game
+# Go Cli Quiz Game
 
 A simple command-line quiz game built with Go that reads questions and answers from a CSV file and quizzes the user interactively.
 
